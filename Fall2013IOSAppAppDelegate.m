@@ -104,7 +104,7 @@ int iNotificationCounter=0;
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
    
-    [Crittercism enableWithAppID:@"5a7c5d6bad4743749b3cb0dd679b9afa00555300"];
+    [Crittercism enableWithAppID:@"0b855ac1c1e34e039b210e688d846f8100555300"];
     
     [PFFacebookUtils initializeFacebook];
     

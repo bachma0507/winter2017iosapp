@@ -1,39 +1,243 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hE6-Z8-hpA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Schedule-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller identifier="InterfaceController" title="Schedule" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <group width="1" alignment="left" layout="vertical" id="sHr-fm-lw1">
+                            <items>
+                                <button width="1" alignment="left" title="My Schedule" id="XdP-px-Lkx">
+                                    <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                    <connections>
+                                        <action selector="mySchedButtonPressed" destination="AgC-eL-Hgc" id="kmJ-Ut-BAF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.45098039220000002" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <table alignment="left" id="eSA-yx-Sor">
+                            <items>
+                                <tableRow identifier="ScheduleTableRow" id="sK4-To-Xnm" customClass="ScheduleTableRow">
+                                    <group key="rootItem" width="1" height="42.5" alignment="left" layout="vertical" id="4Qb-kB-gIJ">
+                                        <items>
+                                            <label width="1" alignment="left" text="Name" id="XeF-Me-pu1">
+                                                <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="Date" id="JE4-yv-Ojt">
+                                                <fontDescription key="font" type="system" pointSize="9"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.13333333333333333" green="0.45490196078431372" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                        <connections>
+                                            <segue destination="kcC-e1-gXy" kind="push" identifier="detailSegue" id="zUX-Q4-Ui6"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="date" destination="JE4-yv-Ojt" id="zrh-NA-s3F"/>
+                                        <outlet property="name" destination="XeF-Me-pu1" id="nrK-aY-anR"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="myScheduleButton" destination="XdP-px-Lkx" id="ONn-Mt-qMz"/>
+                        <outlet property="table" destination="eSA-yx-Sor" id="pyX-v5-x6C"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="252" y="373"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <!--Welcome-->
+        <scene sceneID="f0Z-kr-Awi">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider=""/>
+                <controller identifier="ErrorInterfaceController" title="Welcome" id="hE6-Z8-hpA" customClass="ErrorInterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="Welcome to the 2017 BICSI Winter Conference &amp; Exhibition" numberOfLines="5" id="G3q-zR-BBC">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <button width="1" alignment="left" title="Conference Schedule" id="MWP-eO-eIO">
+                            <color key="backgroundColor" red="0.1333333333" green="0.4549019608" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                            <connections>
+                                <action selector="tryAgain" destination="hE6-Z8-hpA" id="IhU-lC-BBc"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="456" y="155"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="9tK-Dt-H3b">
+            <objects>
+                <controller identifier="DetailScheduleInterfaceController" title="Detail" id="kcC-e1-gXy" customClass="DetailInterfaceController">
+                    <items>
+                        <table alignment="left" id="KtU-N2-Bf1">
+                            <items>
+                                <tableRow identifier="DetailTableRow" id="nUW-vh-Eox" customClass="DetailTableRow">
+                                    <group key="rootItem" width="1" height="80.5" alignment="left" layout="vertical" id="l5Y-Pb-52f">
+                                        <items>
+                                            <label width="1" alignment="left" text="Session" numberOfLines="5" id="4eB-zk-f0G" userLabel="Session">
+                                                <color key="textColor" red="0.1333333333" green="0.4549019608" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="kfg-mD-Fic">
+                                                <items>
+                                                    <label width="43" alignment="left" text="start" id="XXa-HO-Qb9">
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" type="system" pointSize="9"/>
+                                                    </label>
+                                                    <label width="17" alignment="left" text="-" id="FXo-2U-jbP">
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" type="system" pointSize="9"/>
+                                                    </label>
+                                                    <label width="66" alignment="center" text="end" id="XlU-km-uyh">
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" type="system" pointSize="9"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <group width="1" alignment="left" id="R3j-Lr-XT2">
+                                                <items>
+                                                    <label width="1" alignment="left" text="location" id="w4l-4R-uX8">
+                                                        <color key="textColor" red="0.4549019608" green="0.64705882349999999" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="boldSystem" pointSize="9"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="end" destination="XlU-km-uyh" id="nXB-ST-oH6"/>
+                                        <outlet property="location" destination="w4l-4R-uX8" id="RKq-B4-aeq"/>
+                                        <outlet property="session" destination="4eB-zk-f0G" id="vmx-F6-CML"/>
+                                        <outlet property="start" destination="XXa-HO-Qb9" id="wmf-hk-mZs"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="detailTable" destination="KtU-N2-Bf1" id="vTp-fG-JCM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="684" y="371"/>
+        </scene>
+        <!--My Schedule-->
+        <scene sceneID="8yF-lZ-hLM">
+            <objects>
+                <controller identifier="MyScheduleInterfaceController" title="My Schedule" id="Ieh-Cw-c78" customClass="MyScheduleInterfaceController">
+                    <items>
+                        <table alignment="left" id="9TN-Ii-4E0">
+                            <items>
+                                <tableRow identifier="MyScheduleRow" id="w5c-EO-fS4" customClass="MyScheduleTableRow">
+                                    <group key="rootItem" width="1" height="80.5" alignment="left" layout="vertical" id="fhq-X7-e2E">
+                                        <items>
+                                            <label width="1" alignment="left" text="Session" numberOfLines="5" id="oOZ-uu-T7E">
+                                                <color key="textColor" red="0.12549019610000001" green="0.45098039220000002" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="OJg-IZ-g0H">
+                                                <items>
+                                                    <label width="43" alignment="left" text="start" id="buw-bx-GBU">
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" type="system" pointSize="9"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <group width="1" alignment="left" id="1yA-qt-cBF">
+                                                <items>
+                                                    <label width="1" alignment="left" text="location" id="7YL-db-j0T">
+                                                        <color key="textColor" red="0.4549019608" green="0.64705882349999999" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="boldSystem" pointSize="9"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="location" destination="7YL-db-j0T" id="L0v-he-IRR"/>
+                                        <outlet property="session" destination="oOZ-uu-T7E" id="Hff-5Z-Vxr"/>
+                                        <outlet property="start" destination="buw-bx-GBU" id="nlM-3K-8wL"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myScheduleTable" destination="9TN-Ii-4E0" id="c7A-Cx-ShG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="495" y="653"/>
+        </scene>
+        <!--Session-->
+        <scene sceneID="Dyu-Zm-yCh">
+            <objects>
+                <controller identifier="SessionDetailInterfaceController" title="Session" id="RbC-24-k6a" customClass="SessionDetailInterfaceController">
+                    <items>
+                        <table alignment="left" id="Z2r-Dh-SYk">
+                            <items>
+                                <tableRow identifier="SessionDetailTableRow" id="6uL-kl-G5f" customClass="SessionDetailTableRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Ldg-M4-VFD">
+                                        <items>
+                                            <label width="1" alignment="left" text="SessionName" numberOfLines="3" id="Cad-nJ-07f">
+                                                <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="Location" id="KhD-ss-GBw">
+                                                <color key="textColor" red="0.21286965529999999" green="0.74590564950000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="start" id="9bw-zJ-ApW">
+                                                <color key="textColor" red="1" green="0.74901960779999999" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="FG6-Ye-jhA">
+                                                <items>
+                                                    <label width="1" alignment="left" text="SessionDescription" numberOfLines="300" id="E9h-20-3kc">
+                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="locationLabel" destination="KhD-ss-GBw" id="Zx2-RA-kaa"/>
+                                        <outlet property="sessionDescLabel" destination="E9h-20-3kc" id="7I3-nO-LHA"/>
+                                        <outlet property="sessionNameLabel" destination="Cad-nJ-07f" id="cJ7-wa-w0C"/>
+                                        <outlet property="start" destination="9bw-zJ-ApW" id="bpS-EW-ozI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="SessionDetailTable" destination="Z2r-Dh-SYk" id="t9u-tU-kSU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="916" y="303"/>
         </scene>
     </scenes>
 </document>
+
