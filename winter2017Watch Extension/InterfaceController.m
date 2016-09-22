@@ -191,7 +191,7 @@
         //}];
 
         NSURLSession *session = [NSURLSession sharedSession];
-        NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://speedyreference.com/cscheduleF16.php"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://speedyreference.com/cscheduleW17.php"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         if ([data length] == 0 && error == nil)
         {
@@ -346,11 +346,11 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         
         
-        //NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+        //NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
         
         //NSData * data = [NSData dataWithContentsOfURL:url];
         
-//        NSURL *URL = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+//        NSURL *URL = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
 //        NSURLRequest *requestForScheduleData = [NSURLRequest requestWithURL:URL];
 //        
 //        NSURLSession *session = [NSURLSession sharedSession];
@@ -358,7 +358,7 @@
 //        NSURLSessionDataTask *task = [session dataTaskWithRequest:requestForScheduleData completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         NSURLSession *session = [NSURLSession sharedSession];
-        NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
             if ([data length] == 0 && error == nil)
             {

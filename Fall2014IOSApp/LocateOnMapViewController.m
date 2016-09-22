@@ -72,7 +72,7 @@
 //        
 //    }
     
-    NSString *httpSource = [NSString stringWithFormat:@"http://www.speedyreference.com/floormap/boothinfofall16par.htm?hotspot=%@",self.boothLabel];
+    NSString *httpSource = [NSString stringWithFormat:@"http://www.speedyreference.com/floormap/boothinfowin17par.htm?hotspot=%@",self.boothLabel];
     NSURL *fullUrl = [NSURL URLWithString:httpSource];
     NSURLRequest *httpRequest = [NSURLRequest requestWithURL:fullUrl];
     [webView loadRequest:httpRequest];

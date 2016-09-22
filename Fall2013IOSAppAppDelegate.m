@@ -594,7 +594,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/exhibitorsF16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/exhibitorsW17.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -747,7 +747,7 @@ int iNotificationCounter=0;
             //NSHTTPURLResponse *response = nil;
             
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
 
@@ -884,7 +884,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1006,7 +1006,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1128,7 +1128,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1250,7 +1250,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1371,7 +1371,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1499,7 +1499,7 @@ int iNotificationCounter=0;
             
             //NSURL *url = [NSURL URLWithString:@"http://www.speedyreference.com/bicsi/convertcsv1.json"];
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-FALL-TX-0916"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
             
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/testtrunc3.json"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
@@ -1910,7 +1910,7 @@ int iNotificationCounter=0;
         #pragma mark - Create Sponsor Objects
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/sponsorsF16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/sponsorsW17.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -2007,7 +2007,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleF16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW17.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -2103,7 +2103,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/ehscheduleF16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/ehscheduleW17.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
