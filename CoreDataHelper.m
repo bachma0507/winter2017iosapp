@@ -341,7 +341,7 @@ NSString *storeFilename = @"group.org.bicsi.winter2017appnew";
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
 //
 //
-//        NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+//        NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0117"];
 //
 //
 //
