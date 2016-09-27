@@ -766,7 +766,7 @@
                                     <action selector="loginButtonTouchHandler:" destination="C3Y-bg-Xdd" eventType="touchUpInside" id="7cn-Mv-LBw"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.89999999999999991" contentMode="scaleToFill" editable="NO" text="Already have a user account for the Photo Gallery or Chat Rooms? Then sign in below. If not, create a user account." id="7cL-oC-oA1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.89999999999999991" contentMode="scaleToFill" editable="NO" text="Already have a user account for the Photo Gallery? Then sign in below. If not, create a user account." id="7cL-oC-oA1">
                                 <rect key="frame" x="39" y="76" width="243" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
@@ -4089,12 +4089,12 @@
         <image name="yelp_logo.png" width="102" height="52"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TjF-aT-jj7"/>
         <segue reference="40o-NH-skY"/>
         <segue reference="kta-Nv-RwY"/>
         <segue reference="XS1-ta-yNk"/>
+        <segue reference="TjF-aT-jj7"/>
+        <segue reference="Dsf-md-SSX"/>
         <segue reference="R22-dx-yzm"/>
         <segue reference="Bmv-kT-R6k"/>
-        <segue reference="Dsf-md-SSX"/>
     </inferredMetricsTieBreakers>
 </document>
