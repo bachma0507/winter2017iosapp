@@ -106,6 +106,8 @@
 	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
+	<key>Pushwoosh_APPID</key>
+	<string>6D4D3-EA049</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

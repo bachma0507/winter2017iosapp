@@ -6,6 +6,13 @@
 //  Copyright (c) 2013 BICSI. All rights reserved.
 //
 
+@import CoreLocation;
+@import SystemConfiguration;
+@import AVFoundation;
+@import ImageIO;
+
+#import <Pushwoosh/PushNotificationManager.h>
+
 #import "Fall2013IOSAppAppDelegate.h"
 #import "Reachability.h"
 #import "RNCachingURLProtocol.h"
@@ -76,7 +83,21 @@ int iNotificationCounter=0;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //lots of your initialization code
     
+    //-----------PUSHWOOSH PART-----------
+    // set custom delegate for push handling, in our case - view controller
+    PushNotificationManager * pushManager = [PushNotificationManager pushManager];
+    pushManager.delegate = self;
+    
+    // handling push on app start
+    [[PushNotificationManager pushManager] handlePushReceived:launchOptions];
+    
+    // make sure we count app open in Pushwoosh stats
+    [[PushNotificationManager pushManager] sendAppOpen];
+    
+    // register for push notifications!
+    [[PushNotificationManager pushManager] registerForPushNotifications];
     
     self.customLocationManager = [[CLLocationManager alloc] init];
     self.customLocationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
@@ -2456,6 +2477,7 @@ int iNotificationCounter=0;
 {
     //[[PushIOManager sharedInstance] didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
     
+     [[PushNotificationManager pushManager] handlePushRegistration:deviceToken];
     
     // Store the deviceToken in the current installation and save it to Parse.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
@@ -2468,11 +2490,13 @@ int iNotificationCounter=0;
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
 {
     //[[PushIOManager sharedInstance] didFailToRegisterForRemoteNotificationsWithError:error];
+    [[PushNotificationManager pushManager] handlePushRegistrationFailure:error];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
     
+    [[PushNotificationManager pushManager] handlePushReceived:userInfo];
     
     //-------------------------------------//
     //For showing tabbar badge value
@@ -2521,6 +2545,10 @@ int iNotificationCounter=0;
     
     
     
+}
+
+- (void) onPushAccepted:(PushNotificationManager *)pushManager withNotification:(NSDictionary *)pushNotification onStart:(BOOL)onStart {
+    NSLog(@"Push notification received");
 }
 
 - (void)readyForRegistration
