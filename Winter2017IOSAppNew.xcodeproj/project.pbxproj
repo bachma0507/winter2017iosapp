@@ -143,6 +143,7 @@
 		4C42864E1948A163007A5A11 /* scenery5_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4286491948A163007A5A11 /* scenery5_ipad@2x.png */; };
 		4C428655194A0B2A007A5A11 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C428654194A0B2A007A5A11 /* CommentsViewController.m */; };
 		4C429B721D9EA37F008D243A /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C429B711D9EA37F008D243A /* Pushwoosh.framework */; };
+		4C429C591DA6E137008D243A /* BISViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C429C581DA6E137008D243A /* BISViewController.m */; };
 		4C43CE95174741A7008AAA9D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C43CE94174741A7008AAA9D /* CoreLocation.framework */; };
 		4C43CE97174741B0008AAA9D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C43CE96174741B0008AAA9D /* SystemConfiguration.framework */; };
 		4C43CE991747421A008AAA9D /* pushio_config.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C43CE981747421A008AAA9D /* pushio_config.json */; };
@@ -864,6 +865,8 @@
 		4C428653194A0B2A007A5A11 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
 		4C428654194A0B2A007A5A11 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 		4C429B711D9EA37F008D243A /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
+		4C429C571DA6E137008D243A /* BISViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BISViewController.h; sourceTree = "<group>"; };
+		4C429C581DA6E137008D243A /* BISViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BISViewController.m; sourceTree = "<group>"; };
 		4C43CE94174741A7008AAA9D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4C43CE96174741B0008AAA9D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4C43CE981747421A008AAA9D /* pushio_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pushio_config.json; sourceTree = "<group>"; };
@@ -1760,6 +1763,7 @@
 		4C2D69FE174541100053BCC0 /* Fall2014IOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C429C561DA6E10A008D243A /* BIS */,
 				4C6AE8B51BCEB266000590F5 /* videoTutorial */,
 				4C657AA81AF29E6200A8A166 /* splitview */,
 				4CB2EFC41A3F948C0066979B /* SegmentControlSchedules */,
@@ -1989,6 +1993,15 @@
 				4C428654194A0B2A007A5A11 /* CommentsViewController.m */,
 			);
 			name = Comments;
+			sourceTree = "<group>";
+		};
+		4C429C561DA6E10A008D243A /* BIS */ = {
+			isa = PBXGroup;
+			children = (
+				4C429C571DA6E137008D243A /* BISViewController.h */,
+				4C429C581DA6E137008D243A /* BISViewController.m */,
+			);
+			name = BIS;
 			sourceTree = "<group>";
 		};
 		4C48759C176CED7200059E21 /* Storyboards */ = {
@@ -3952,6 +3965,7 @@
 				4C9B1DA819E342C7007E0F51 /* GroupView.m in Sources */,
 				4C7C0F6517A4A9B700726FC3 /* MyFavoritesCell.m in Sources */,
 				4C7C0F6817A4BEA300726FC3 /* MyFavoritesDetailViewController.m in Sources */,
+				4C429C591DA6E137008D243A /* BISViewController.m in Sources */,
 				4CBE72A1198C056D0090DA6E /* Speakers5.m in Sources */,
 				4CD8E09F1938121600A4326C /* ViewController.m in Sources */,
 				4C62C31517A972DA00C736BC /* ExhibitorWebViewController.m in Sources */,
