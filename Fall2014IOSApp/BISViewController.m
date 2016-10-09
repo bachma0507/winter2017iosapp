@@ -37,7 +37,7 @@
     
     
     //NSString *httpSource = @"https://speedyreference.com/bicsi2.html";
-    NSString *httpSource = @"https://www.speedyreference.com/webform/web/index.html";
+    NSString *httpSource = @"https://www.speedyreference.com/nppredirect.html";
     NSURL *fullUrl = [NSURL URLWithString:httpSource];
     NSURLRequest *httpRequest = [NSURLRequest requestWithURL:fullUrl];
     [webView loadRequest:httpRequest];
