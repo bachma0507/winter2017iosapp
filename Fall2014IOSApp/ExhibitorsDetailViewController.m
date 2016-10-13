@@ -159,7 +159,7 @@
     //    NSURL *url = [NSURL URLWithString:myURL];
     //	[[UIApplication sharedApplication] openURL:url];
     //NSString * myURL = [NSString stringWithFormat:@"http://s23.a2zinc.net/clients/BICSI/fall2016/public/eBooth.aspx?Nav=false&BoothID=%@&EventID=%@&CoID=%@&Source=Floorplan", myExhibitors.boothId, myExhibitors.eventId, myExhibitors.coId];
-    NSString * myURL = [NSString stringWithFormat:@"http://s23.a2zinc.net/clients/BICSI/winter2017/Public/eBooth.aspx?IndexInList=6&FromPage=Exhibitors.aspx&ParentBoothID=&ListByBooth=true&BoothID=%@&Nav=False", myExhibitors.boothId];
+    NSString * myURL = [NSString stringWithFormat:@"http://s23.a2zinc.net/clients/BICSI/winter2017/Public/eBooth.aspx?IndexInList=2&FromPage=Exhibitors.aspx&ParentBoothID=&ListByBooth=true&BoothID=%@&Nav=False", myExhibitors.boothId];
     NSURL *URL = [NSURL URLWithString:myURL];
     SVWebViewController *webViewController = [[SVWebViewController alloc] initWithURL:URL];
     [self.navigationController pushViewController:webViewController animated:YES];
