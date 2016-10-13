@@ -54,7 +54,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -69,7 +69,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>FacebookAppID</key>
 	<string>473691366136659</string>
 	<key>FacebookDisplayName</key>
@@ -85,6 +85,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location is required to find out where you are</string>
+	<key>Pushwoosh_APPID</key>
+	<string>6D4D3-EA049</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
 	<key>UIBackgroundModes</key>
@@ -106,8 +108,6 @@
 	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
-	<key>Pushwoosh_APPID</key>
-	<string>6D4D3-EA049</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
