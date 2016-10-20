@@ -161,7 +161,6 @@
 		4C48F0121D91D15200EE725B /* winter2017Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C48F0111D91D15200EE725B /* winter2017Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C48F0221D91D15200EE725B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C48F0211D91D15200EE725B /* Assets.xcassets */; };
 		4C48F0261D91D15200EE725B /* winter2017Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4C48F0051D91D15100EE725B /* winter2017Watch.app */; };
-		4C4A456D18E9D7DA003A14C3 /* libCrittercism_v4_1_1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A456B18E9D7DA003A14C3 /* libCrittercism_v4_1_1.a */; };
 		4C4A7AB91BC8011700F0EC5F /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A7AB41BC8011700F0EC5F /* green.png */; };
 		4C4A7ABA1BC8011700F0EC5F /* green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A7AB51BC8011700F0EC5F /* green@2x.png */; };
 		4C4A7ABB1BC8011700F0EC5F /* green@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A7AB61BC8011700F0EC5F /* green@2x~ipad.png */; };
@@ -252,6 +251,7 @@
 		4C8A8348177B7CC100022E03 /* exhibitors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A8347177B7CC100022E03 /* exhibitors.m */; };
 		4C8A834B177B7ECF00022E03 /* ExhibitorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A834A177B7ECF00022E03 /* ExhibitorsViewController.m */; };
 		4C8A834E177B80B800022E03 /* ExhibitorsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A834D177B80B800022E03 /* ExhibitorsDetailViewController.m */; };
+		4C8DFC1C1DB2D5AD0059BB50 /* Crittercism.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8DFC1B1DB2D5AD0059BB50 /* Crittercism.framework */; };
 		4C8E885A182C24E2001204D9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8E8859182C24E2001204D9 /* AdSupport.framework */; };
 		4C8F683D18330CD3007D7CA3 /* comm_meetings_icon_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F683C18330CD3007D7CA3 /* comm_meetings_icon_ipad.png */; };
 		4C943183178E61160057CEE0 /* PresentationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C943182178E61160057CEE0 /* PresentationsViewController.m */; };
@@ -896,12 +896,10 @@
 		4C48F0171D91D15200EE725B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		4C48F0211D91D15200EE725B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C48F0231D91D15200EE725B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C4A456418E9D75C003A14C3 /* libCrittercism_v4_1_1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCrittercism_v4_1_1.a; path = CrittercismSDK/libCrittercism_v4_1_1.a; sourceTree = "<group>"; };
 		4C4A456718E9D7DA003A14C3 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
 		4C4A456818E9D7DA003A14C3 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
 		4C4A456918E9D7DA003A14C3 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
 		4C4A456A18E9D7DA003A14C3 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
-		4C4A456B18E9D7DA003A14C3 /* libCrittercism_v4_1_1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v4_1_1.a; sourceTree = "<group>"; };
 		4C4A7AB41BC8011700F0EC5F /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		4C4A7AB51BC8011700F0EC5F /* green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green@2x.png"; sourceTree = "<group>"; };
 		4C4A7AB61BC8011700F0EC5F /* green@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green@2x~ipad.png"; sourceTree = "<group>"; };
@@ -1029,6 +1027,7 @@
 		4C8A834A177B7ECF00022E03 /* ExhibitorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitorsViewController.m; sourceTree = "<group>"; };
 		4C8A834C177B80B800022E03 /* ExhibitorsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitorsDetailViewController.h; sourceTree = "<group>"; };
 		4C8A834D177B80B800022E03 /* ExhibitorsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitorsDetailViewController.m; sourceTree = "<group>"; };
+		4C8DFC1B1DB2D5AD0059BB50 /* Crittercism.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crittercism.framework; sourceTree = "<group>"; };
 		4C8E8859182C24E2001204D9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4C8F683C18330CD3007D7CA3 /* comm_meetings_icon_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comm_meetings_icon_ipad.png; sourceTree = "<group>"; };
 		4C943181178E61160057CEE0 /* PresentationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationsViewController.h; sourceTree = "<group>"; };
@@ -1540,7 +1539,6 @@
 				4C69E60518086E5400FEE035 /* CFNetwork.framework in Frameworks */,
 				4CD0599619F58FC00062C1EC /* Parse.framework in Frameworks */,
 				4C86A61A17BEA9D800E8E9BB /* EventKit.framework in Frameworks */,
-				4C4A456D18E9D7DA003A14C3 /* libCrittercism_v4_1_1.a in Frameworks */,
 				4CD0599819F58FCB0062C1EC /* Bolts.framework in Frameworks */,
 				4C1B9B1817A2269000267303 /* CoreTelephony.framework in Frameworks */,
 				4C01EEDD17931F1F00D49A99 /* MapKit.framework in Frameworks */,
@@ -1551,6 +1549,7 @@
 				4C74593317567FF800A76417 /* Security.framework in Frameworks */,
 				4C43CE97174741B0008AAA9D /* SystemConfiguration.framework in Frameworks */,
 				4C43CE95174741A7008AAA9D /* CoreLocation.framework in Frameworks */,
+				4C8DFC1C1DB2D5AD0059BB50 /* Crittercism.framework in Frameworks */,
 				4C12841C18CE34BA00060A56 /* FacebookSDK.framework in Frameworks */,
 				4C2D69F9174541100053BCC0 /* UIKit.framework in Frameworks */,
 				4C2D69FB174541100053BCC0 /* Foundation.framework in Frameworks */,
@@ -1725,6 +1724,7 @@
 		4C2D69F7174541100053BCC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C8DFC1B1DB2D5AD0059BB50 /* Crittercism.framework */,
 				4C429B711D9EA37F008D243A /* Pushwoosh.framework */,
 				4CBA38C61D9C4BF700B739A8 /* libstdc++.tbd */,
 				4CCFD98B1A05F22D00464E3D /* SpeechKit.framework */,
@@ -1745,7 +1745,6 @@
 				4C86A61917BEA9D800E8E9BB /* EventKit.framework */,
 				4C12841B18CE34BA00060A56 /* FacebookSDK.framework */,
 				4C2D69FA174541100053BCC0 /* Foundation.framework */,
-				4C4A456418E9D75C003A14C3 /* libCrittercism_v4_1_1.a */,
 				4C69E60618086E6600FEE035 /* libz.1.1.3.dylib */,
 				4C1B9B1917A226AC00267303 /* libz.dylib */,
 				4C01EEDC17931F1F00D49A99 /* MapKit.framework */,
@@ -2176,7 +2175,6 @@
 				4C4A456818E9D7DA003A14C3 /* Crittercism.h */,
 				4C4A456918E9D7DA003A14C3 /* CrittercismDelegate.h */,
 				4C4A456A18E9D7DA003A14C3 /* dsym_upload.sh */,
-				4C4A456B18E9D7DA003A14C3 /* libCrittercism_v4_1_1.a */,
 			);
 			path = CrittercismSDK;
 			sourceTree = "<group>";
